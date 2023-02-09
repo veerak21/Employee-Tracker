@@ -1,3 +1,4 @@
+-- Insert multiple department names --
 INSERT INTO department (dept_name)
 VALUES ('Sales'),
        ('HR'),
@@ -5,6 +6,7 @@ VALUES ('Sales'),
        ('IT'),
        ('Executive');
 
+-- adding the multiple values to the table role
 INSERT INTO role (title,salary,depart_id)
 VALUES ('Account Executive', 100000, 1),
        ('Sr. Account Executive', 150000, 1),
@@ -21,6 +23,7 @@ VALUES ('Account Executive', 100000, 1),
        ('Chief Operating Officer', 275000, 5),
        ('Chief Financial Officer', 275000, 5);
 
+-- adding the multiple values to the table employee
 INSERT INTO employee (first_name, last_name, rolee_id, manager_id)
 VALUES ('Dottie', 'Brown', 12, NULL),
        ('Carol', 'Houlihan', 13, 1),

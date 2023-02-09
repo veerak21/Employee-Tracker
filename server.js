@@ -124,7 +124,7 @@ viewAllEmployeesByManager = () => {
             choices: managers   
             },
         ]).then((response) => {
-            //query for the employees of the manager 
+            //query for the all employees of the manager 
             db.query(`SELECT e.emp_id, e.first_name, e.last_name, role.title, department.dept_name, role.salary, CONCAT(m.first_name, ' ', m.last_name) manager FROM employee m RIGHT JOIN employee e ON e.manager_id = m.emp_id JOIN role ON e.rolee_id = role.role_id JOIN department ON department.dept_id = role.depart_id WHERE e.manager_id = ${response.manager} ORDER BY e.emp_id ASC`, 
             (err, res) => {
                 if (err) throw err;
