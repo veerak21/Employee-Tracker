@@ -9,7 +9,7 @@ This is a command line application that allows a user to manage information on e
  ## Usage:
    The application can be invoked using a `node index.js` command. The user will be prompted to view all departments, view all roles, view all employees, add a department, add a role, add an employee, update an employee's current role, update an employee's current manager, remove an employee, remove a department, remove a role, and get the total salary for a specific department. After executing any of the add, update, or remove functions, the database is updated automatically.
 
-   Follow the [Walkthrough video]() for its potential applications. 
+   Follow the [Walkthrough video](https://drive.google.com/file/d/1to8tpvxMR17x-FtoN-ttw1oJbg50LUIg/view) for its potential applications. 
  
 
  ## License:

@@ -45,39 +45,39 @@ startApp = () => {
                     break;
                 case 'View all employees by manager':
                     viewAllEmployeesByManager();
-                break;
+                    break;
                 case 'Add a department':
                     addADepartment();
-                break;
+                    break;
                 case 'Add a role':
                     addARole();
-                break;
+                    break;
                 case 'Add an employee':
                     addAnEmployee();
-                break;
+                    break;
                 case 'Update employee\'s role':
                     updateEmployeeRole();
-                break;
+                    break;
                 case 'Update employee\'s manager':
                     updateEmployeesManager();
-                break;
+                    break;
                 case 'Remove a department':
                     removeADepartment();
-                break;
+                    break;
                 case 'Remove a role':
                     removeARole();
-                break;
+                    break;
                 case 'Remove an employee':
                     removeAnEmployee();
-                break;
+                    break;
                 case 'View total salary of department':
                     viewDepartmentSalary();
-                break;
+                    break;
                 case 'Exit program':
                     db.end();
                     console.log('\n You have exited the employee management program. Thanks for using! \n');
                     return;
-                default:
+                 default:
                     break;
             
         }
@@ -134,6 +134,8 @@ viewAllEmployeesByManager = () => {
         })
     })
 }
+
+
 
 addADepartment = () => {
     //inquirer prompt for new department
