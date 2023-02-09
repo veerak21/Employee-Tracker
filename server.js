@@ -218,9 +218,9 @@ addAnEmployee = () => {
                     message: 'What is the new employee\'s last name?'
                 },
                 {
-                    name: 'role',
+                    name: 'rolee',
                     type: 'rawlist',
-                    message: 'What is the new employee\'s title?',
+                    message: 'What is the new employee\'s role title?',
                     choices: roles
                 },
                 {
@@ -235,21 +235,15 @@ addAnEmployee = () => {
                 {
                     first_name: response.firstName,
                     last_name: response.lastName,
-                    rolee_id: response.role,
+                    rolee_id: response.rolee,
                     manager_id: response.manager,
-                }, 
-                (err, res) => {
-                    if (err) throw err;
-                })
-                db.query(`INSERT INTO role SET ?`, 
-                {
-                    depart_id: response.role,
                 }, 
                 (err, res) => {
                     if (err) throw err;
                     console.log(`\n ${response.firstName} ${response.lastName} successfully added to database! \n`);
                     startApp();
                 })
+                
             })
         })
     })
